@@ -14,7 +14,7 @@ async function getItem(title) {
         console.log(chalk.yellow('No auction item found with that title'))
     }
    } catch(err) {
-    console.log(chalk.red("Error getting the auction item:" + err.message))
+    console.log(chalk.red("Error getting the auction item:" + err))
    }
 }
 

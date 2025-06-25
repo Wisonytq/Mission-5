@@ -14,7 +14,7 @@ async function deleteItem(title) {
       console.log(chalk.green(`Deleted the item titled: ${title}`));
     }
   } catch (err) {
-    console.error(chalk.red("Error deleting item:" + err.message));
+    console.error(chalk.red("Error deleting item:" + err));
   }
 }
 

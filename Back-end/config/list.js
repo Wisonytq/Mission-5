@@ -23,7 +23,7 @@ async function listItems() {
                 ))
         })
     } catch(err){
-        console.error(chalk.red("Error listing items:" + err.message))
+        console.error(chalk.red("Error listing items:" + err))
     }
 }
 

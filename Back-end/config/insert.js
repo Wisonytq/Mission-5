@@ -16,7 +16,7 @@ async function insertItem({ title, desc, start, reserve }) {
     await collection.insertOne(newItem);
     console.log(chalk.green("auction item inserted successfully"));
   } catch (err) {
-    console.error(chalk.red("Error inserting the auction item:" + err.message));
+    console.error(chalk.red("Error inserting the auction item:" + er));
   }
 }
 

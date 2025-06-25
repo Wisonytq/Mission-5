@@ -1,11 +1,20 @@
 #!/usr/bin/env node
 const { Command } = require("commander");
+const seedItems = require('./config/seed')
 const insertItem = require("./config/insert");
 const deleteItem = require("./config/delete");
 const getItem = require("./config/get")
 const listItems = require("./config/list")
 
 const program = new Command();
+
+program
+  .command("seed")
+  .description("seeding multiple auction items that were already pre-made")
+  .action(async () => {
+    await seedItems()
+    process.exit(0)
+  })
 
 program
   .command("insert")
